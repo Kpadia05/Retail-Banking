@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Retail Banking</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<style type="text/css">
+		body{
+			background-color: lightblue;
+		}
+		label{
+			font-size: 20;
+			font-weight: bold;
+		}
+		input{
+			font-size: 16;
+		}
+		button{
+			background-color: black;
+			color: white;
+			font-size: 20;
+			padding: 10px 15px 10px 15px;
+		}
+	</style>
+</head>
+<body>
+	<br><br><br>
+	<h1>Register</h1>
+	<div align="center" style="padding-top: 50px;">
+		<form name="register">
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="mail">Email:</label>
+			<input type="Email" id="mail" name="mail"><br><br>
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone"><br><br>
+			<label for="pswd1">Password:</label>
+			<input type="Password" id="pswd1" name="pswd1"><br><br>
+			<label for="pswd2">Confirm Password:</label>
+			<input type="Password" id="pswd2" name="pswd2"><br><br>
+			<a href="http://127.0.0.1:5000/login"><button type="button">Submit</button></a>
+		</form>
+	</div>
+</body>
+</html>
